@@ -2,6 +2,7 @@
 # vue-highcharts
 
 > The component of Vue 2.0 for highcharts
+> HARIS NOTES: Just added import for highcharts-exporting and highcharts-offline-exporting to allow offline export in the component and demo source
 
 [中文 README](./README_zh.md)
 
