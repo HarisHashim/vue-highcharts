@@ -2,6 +2,19 @@ export let basicData = {
     chart: {
         type: 'spline'
     },
+    exporting: {
+        chartOptions: {
+            // specific options for the exported image
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            }
+        },
+        fallbackToExportServer: false
+    },
     title: {
         text: 'Monthly Average Temperature'
     },
@@ -59,6 +72,19 @@ export let asyncData = {
 export const AreaData = {
     chart: {
         type: 'area'
+    },
+    exporting: {
+        chartOptions: {
+            // specific options for the exported image
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            }
+        },
+        fallbackToExportServer: false
     },
     title: {
         text: 'US and USSR nuclear stockpiles'
@@ -133,6 +159,19 @@ export const PieData = {
             alpha: 45
         }
     },
+    exporting: {
+        chartOptions: {
+            // specific options for the exported image
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            }
+        },
+        fallbackToExportServer: false
+    },
     title: {
         text: 'Contents of Highsoft\'s weekly fruit delivery'
     },
@@ -164,6 +203,19 @@ export const PieData = {
 export const DrilldownData = {
     chart: {
         type: 'column'
+    },
+    exporting: {
+        chartOptions: {
+            // specific options for the exported image
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            }
+        },
+        fallbackToExportServer: false
     },
     title: {
         text: 'Basic drilldown'

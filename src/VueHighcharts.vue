@@ -5,6 +5,9 @@
 
 <script>
   import Highcharts from 'highcharts'
+  import HighchartsExporting from "highcharts-exporting";
+  import HighchartsOfflineExporting from "highcharts-offline-exporting";
+
   import {warn} from './debug'
 
   export default {
@@ -53,6 +56,12 @@
       init(){
         if (!this.getChart() && this.options) {
          let _Highcharts = this.Highcharts || Highcharts;
+         let _HighchartsExporting = this.HighchartsExporting || HighchartsExporting;
+         let _HighchartsOfflineExporting = this.HighchartsOfflineExporting || HighchartsOfflineExporting;
+
+         _HighchartsExporting(_Highcharts);
+         _HighchartsOfflineExporting(_Highcharts);
+
          if (_Highcharts.product == 'Highstock') {
            this.chart = new _Highcharts.stockChart(this.$el, this.options);
          } else {
